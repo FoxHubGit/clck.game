@@ -1,0 +1,83 @@
+@font-face { font-family: pribambas; src: url('../fonts/pribambas.ttf'); } 
+
+h1 {
+    color: black;
+    text-align:  center;
+    width: 600;
+    height: 600;
+    font-family: pribambas;
+    font-size: 60px;
+    color: rgba(56,163,253,0.3);
+    text-shadow: 1.4px 1px 1px #79c3ff;
+    pointer-events: none;
+}
+
+h1::selection {
+   background: transparent;
+}
+
+h1::-moz-selection {
+   background: transparent;
+}
+
+button, button:active, button:focus {
+    outline: none;
+}
+
+.bt {
+    margin:  center;
+    position: relative;
+    transform: translate(-50%, 0);
+    top: 25%;
+    left: 50%;
+    background:#38a4fdbd;
+    border:2px solid #38a3fd;
+    border-radius:50%;
+    box-shadow:0 8px 10px rgba(56,163,253,0.3);
+    cursor:pointer;
+    height: 500px;
+    text-align:center;
+    width: 500px;
+    position: fixed;
+    right: 8%;
+    z-index:999;
+    transition:.3s;
+    -webkit-animation:hoverWave linear 1s infinite;
+    animation:hoverWave linear 1s infinite;
+}
+
+
+@-webkit-keyframes hoverWave {
+0% {
+    box-shadow:0 8px 10px rgba(56, 164, 253, 0.562),0 0 0 0 rgba(56, 164, 253, 0.562),0 0 0 0 rgba(56, 164, 253, 0.562)
+}
+
+40% {
+    box-shadow:0 8px 10px rgba(56,163,253,0.3),0 0 0 15px rgba(56, 164, 253, 0.562),0 0 0 0 rgba(56, 164, 253, 0.562)
+}
+
+80% {
+    box-shadow:0 8px 10px rgba(56,163,253,0.3),0 0 0 30px rgba(56,163,253,0),0 0 0 26.7px rgba(56,163,253,0.067)
+}
+
+100% {
+    box-shadow:0 8px 10px rgba(56,163,253,0.3),0 0 0 30px rgba(56,163,253,0),0 0 0 40px rgba(56,163,253,0.0)
+}
+
+}@keyframes hoverWave {
+    0% {
+    box-shadow:0 8px 10px rgba(56,163,253,0.3),0 0 0 0 rgba(56, 164, 253, 0.562),0 0 0 0 rgba(56, 164, 253, 0.562)
+}
+
+40% {
+    box-shadow:0 8px 10px rgba(56,163,253,0.3),0 0 0 15px rgba(56, 164, 253, 0.562),0 0 0 0 rgba(56, 164, 253, 0.562)
+}
+
+80% {
+    box-shadow:0 8px 10px rgba(56,163,253,0.3),0 0 0 30px rgba(56,163,253,0),0 0 0 26.7px rgba(56,163,253,0.067)
+}
+
+100% {
+    box-shadow:0 8px 10px rgba(56,163,253,0.3),0 0 0 30px rgba(56,163,253,0),0 0 0 40px rgba(56,163,253,0.0)
+}
+}
